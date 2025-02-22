@@ -135,8 +135,8 @@ pass
 1. **[ViLT](https://proceedings.mlr.press/v139/kim21k.html)**: Kim W, Son B, Kim I. **Vilt: Vision-and-language transformer without convolution or region supervision**. International conference on machine learning. PMLR, 2021: 5583-5594. 
 2. **[UNITER](https://link.springer.com/chapter/10.1007/978-3-030-58577-8_7)**: Chen Y C, Li L, Yu L, et al. **Uniter:  Universal image-text representation learning**. European conference on  computer vision. Cham: Springer International Publishing, 2020: 104-120.
 3. **[ALBEF](https://proceedings.neurips.cc/paper_files/paper/2021/hash/505259756244493872b7709a8a01b536-Abstract.html)**: Li J, Selvaraju R, Gotmare A, et al. **Align before fuse: Vision and language representation learning with momentum distillation**. Advances in neural information processing systems, 2021, 34: 9694-9705. 
-4. **[ISMol](https://ieeexplore.ieee.org/abstract/document/10375706)**: Zhang X, Xiang H, Yang X, et al. **Dual-View Learning Based on Images and Sequences for Molecular Property Prediction**. IEEE Journal of Biomedical and Health Informatics, 2023. 
-5. **[MolCA](https://arxiv.org/abs/2310.12798)**: Liu Z, Li S, Luo Y, et al. **MolCA: Molecular graph-language modeling with cross-modal projector and uni-modal adapter**. arXiv preprint arXiv:2310.12798, 2023. 
+
+- **Multi-modal matching prediction methods for drug discovery:** [ISMol](https://ieeexplore.ieee.org/abstract/document/10375706), [MolCA](https://arxiv.org/abs/2310.12798)
 
 ### S5.3 Masked Prediction
 
@@ -151,22 +151,19 @@ pass
 
 1. **[GPT](https://hayate-lab.com/wp-content/uploads/2023/05/43372bfa750340059ad87ac8e538c53b.pdf)**: Radford A. **Improving language understanding by generative pre-training**. 2018. 
 2. **[PaLM](https://www.jmlr.org/papers/v24/22-1144.html)**: Chowdhery A, Narang S, Devlin J, et al. **Palm: Scaling language modeling with pathways**. Journal of Machine Learning Research, 2023, 24(240): 1-113. 
-3. **[MolGPT](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.1c00600)**: Bagal V, Aggarwal R, Vinod P K, et al. **MolGPT: molecular generation using a transformer-decoder model**. Journal of Chemical Information and Modeling, 2021, 62(9): 2064-2076. 
-4. **[MolXPT](https://arxiv.org/abs/2305.10688)**: Liu Z, Zhang W, Xia Y, et al. **Molxpt: Wrapping molecules with text for generative pre-training**. arXiv preprint arXiv:2305.10688, 2023. 
-5. **[GPT-GNN](https://dl.acm.org/doi/abs/10.1145/3394486.3403237)**: Hu Z, Dong Y, Wang K, et al. **Gpt-gnn: Generative pre-training of graph neural networks**. Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery & data mining. 2020: 1857-1867. 
-6. **[MGSSL](https://proceedings.neurips.cc/paper/2021/hash/85267d349a5e647ff0a9edcb5ffd1e02-Abstract.html)**: Zhang Z, Liu Q, Wang H, et al. **Motif-based graph self-supervised learning for molecular property prediction**. Advances in Neural Information Processing Systems, 2021, 34: 15870-15882. 
-7. **[PrefixMol](https://arxiv.org/abs/2302.07120)**: Gao Z, Hu Y, Tan C, et al. **Prefixmol: Target-and chemistry-aware molecule design via prefix embedding**. arXiv preprint arXiv:2302.07120, 2023. 
+3. **[GPT-GNN](https://dl.acm.org/doi/abs/10.1145/3394486.3403237)**: Hu Z, Dong Y, Wang K, et al. **Gpt-gnn: Generative pre-training of graph neural networks**. Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery & data mining. 2020: 1857-1867. 
+
+- **Autoregressive modeling methods for drug discovery:** [MolGPT](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.1c00600), [MolXPT](https://arxiv.org/abs/2305.10688), [MGSSL](https://proceedings.neurips.cc/paper/2021/hash/85267d349a5e647ff0a9edcb5ffd1e02-Abstract.html), [PrefixMol](https://arxiv.org/abs/2302.07120)
 
 ## S6 Self-supervised Training Strategy
 
 1. **[Adapter](http://proceedings.mlr.press/v97/houlsby19a.html)**: Houlsby N, Giurgiu A, Jastrzebski S, et al. **Parameter-efficient transfer learning for NLP. International conference on machine learning**. PMLR, 2019: 2790-2799. 
-2. **Soft Prompt**: 
-   - Li X L, Liang P. **Prefix-tuning: Optimizing continuous prompts for generation**. arXiv preprint arXiv:2101.00190, 2021. [paper link](https://arxiv.org/abs/2101.00190)
-   - Lester B, Al-Rfou R, Constant N. **The power of scale for parameter-efficient prompt tuning**. arXiv preprint arXiv:2104.08691, 2021. [paper link](https://arxiv.org/abs/2104.08691)
-3. **[BitFit](https://arxiv.org/abs/2106.10199)**: Zaken E B, Ravfogel S, Goldberg Y. **Bitfit: Simple parameter-efficient fine-tuning for transformer-based masked language-models**. arXiv preprint arXiv:2106.10199, 2021. 
-4. **[LoRA](https://arxiv.org/abs/2106.09685)**: Hu E J, Shen Y, Wallis P, et al. **Lora: Low-rank adaptation of large language models**. arXiv preprint arXiv:2106.09685, 2021. 
+2. **[Soft Prompt](https://arxiv.org/abs/2101.00190)**: Li X L, Liang P. **Prefix-tuning: Optimizing continuous prompts for generation**. arXiv preprint arXiv:2101.00190, 2021. 
+3. **[Prompt Tuning](https://arxiv.org/abs/2104.08691)**: Lester B, Al-Rfou R, Constant N. **The power of scale for parameter-efficient prompt tuning**. arXiv preprint arXiv:2104.08691, 2021. 
+4. **[BitFit](https://arxiv.org/abs/2106.10199)**: Zaken E B, Ravfogel S, Goldberg Y. **Bitfit: Simple parameter-efficient fine-tuning for transformer-based masked language-models**. arXiv preprint arXiv:2106.10199, 2021. 
+5. **[LoRA](https://arxiv.org/abs/2106.09685)**: Hu E J, Shen Y, Wallis P, et al. **Lora: Low-rank adaptation of large language models**. arXiv preprint arXiv:2106.09685, 2021. 
 
-- **Different post-training strategies for drug discovery:** [MRCGNN](https://ojs.aaai.org/index.php/AAAI/article/view/25665), [TIGER](https://ojs.aaai.org/index.php/AAAI/article/view/27777), [MGIB](https://ieeexplore.ieee.org/abstract/document/10584266), [MIRACLE](https://dl.acm.org/doi/abs/10.1145/3442381.3449786), [deepR2cov](https://academic.oup.com/bib/article/22/6/bbab226/6296505), [BioERP](https://academic.oup.com/bioinformatics/article/37/24/4793/6332000), [KANO](https://www.nature.com/articles/s42256-023-00654-0)
+- **Different training strategies for drug discovery:** [MRCGNN](https://ojs.aaai.org/index.php/AAAI/article/view/25665), [TIGER](https://ojs.aaai.org/index.php/AAAI/article/view/27777), [MGIB](https://ieeexplore.ieee.org/abstract/document/10584266), [MIRACLE](https://dl.acm.org/doi/abs/10.1145/3442381.3449786), [deepR2cov](https://academic.oup.com/bib/article/22/6/bbab226/6296505), [BioERP](https://academic.oup.com/bioinformatics/article/37/24/4793/6332000), [KANO](https://www.nature.com/articles/s42256-023-00654-0)
 
 ## S7 Drug Discovery Applications
 
