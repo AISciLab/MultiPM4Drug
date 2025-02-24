@@ -167,8 +167,12 @@ It is worth noting that this Review highlights the adaptability between various 
 3. **[Prompt Tuning](https://arxiv.org/abs/2104.08691)**: Lester B, Al-Rfou R, Constant N. **The power of scale for parameter-efficient prompt tuning**. arXiv preprint arXiv:2104.08691, 2021. 
 4. **[BitFit](https://arxiv.org/abs/2106.10199)**: Zaken E B, Ravfogel S, Goldberg Y. **Bitfit: Simple parameter-efficient fine-tuning for transformer-based masked language-models**. arXiv preprint arXiv:2106.10199, 2021. 
 5. **[LoRA](https://arxiv.org/abs/2106.09685)**: Hu E J, Shen Y, Wallis P, et al. **Lora: Low-rank adaptation of large language models**. arXiv preprint arXiv:2106.09685, 2021. 
+6. Liu Y, Jin M, Pan S, et al. **Graph  self-supervised learning: A survey**. IEEE transactions on knowledge  and data engineering, 2022, 35(6): 5879-5900. [paper link](https://ieeexplore.ieee.org/abstract/document/9770382)
+7. Wu L, Lin H, Tan C, et al.  **Self-supervised learning on graphs: Contrastive, generative, or  predictive**. IEEE Transactions on Knowledge and Data Engineering,  2021, 35(4): 4216-4235. [paper link](https://ieeexplore.ieee.org/abstract/document/9632431)
+8. Han Z, Gao C, Liu J, et al. **Parameter-efficient fine-tuning for large  models: A comprehensive survey**. arXiv preprint arXiv:2403.14608,  2024. [paper link](https://arxiv.org/abs/2403.14608)
+9. Xu L, Xie H, Qin S Z J, et al. **Parameter-efficient fine-tuning methods for pretrained language models: A critical review and assessment**. arXiv preprint arXiv:2312.12148, 2023. [paper link](https://arxiv.org/abs/2312.12148)
 
-- **Different training strategies for drug discovery:** [MRCGNN](https://ojs.aaai.org/index.php/AAAI/article/view/25665), [TIGER](https://ojs.aaai.org/index.php/AAAI/article/view/27777), [MGIB](https://ieeexplore.ieee.org/abstract/document/10584266), [MIRACLE](https://dl.acm.org/doi/abs/10.1145/3442381.3449786), [deepR2cov](https://academic.oup.com/bib/article/22/6/bbab226/6296505), [BioERP](https://academic.oup.com/bioinformatics/article/37/24/4793/6332000), [KANO](https://www.nature.com/articles/s42256-023-00654-0)
+- **Different training strategies for drug discovery:** [MRCGNN](https://ojs.aaai.org/index.php/AAAI/article/view/25665), [TIGER](https://ojs.aaai.org/index.php/AAAI/article/view/27777), [MGIB](https://ieeexplore.ieee.org/abstract/document/10584266), [MIRACLE](https://dl.acm.org/doi/abs/10.1145/3442381.3449786)
 
 ## S7 Drug Discovery Applications
 
