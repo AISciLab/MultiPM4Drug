@@ -73,6 +73,8 @@ It is worth noting that this Review highlights the adaptability between various 
 
 1. **[DNN](https://www.nature.com/articles/nature14539)**: LeCun Y, Bengio Y, Hinton G. **Deep learning**. nature, 2015, 521(7553): 436-444.
 
+- **DNN-based drug discovery:** [DeepDDI](https://www.pnas.org/doi/abs/10.1073/pnas.1803294115), [DeepSynergy](https://academic.oup.com/bioinformatics/article/34/9/1538/4747884) 
+
 ### S4.2 Convolutional Neural Networks (CNNs)
 
 1. **[VGG](https://ieeexplore.ieee.org/abstract/document/7005506)**: He K, Zhang X, Ren S, et al. **Spatial pyramid pooling in deep convolutional networks for visual recognition**. IEEE transactions on pattern analysis and machine intelligence, 2015, 37(9): 1904-1916.
