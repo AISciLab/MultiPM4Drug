@@ -37,27 +37,9 @@ It is worth noting that this Review highlights the adaptability between various 
 ## S2 Database
 
 1. [DrugBank](http://www.drugbank.ca/): DrugBank is comprehensive database containing information on drugs and targets.
-2. [ChemDB](https://cdb.ics.uci.edu/): ChemDB is a chemical database that contains nearly 5 million commercially available molecules, along with their predicted or experimentally determined physicochemical properties.
-3. [PubChem](https://pubchem.ncbi.nlm.nih.gov/): PubChem provides detailed drug molecule information, including chemical structure and properties, biological activity, toxicity, and more.
-4. [ChEMBL](https://www.ebi.ac.uk/chembl/): ChEMBL contains chemical, biological activity and genomic data.
-5. [STRING](https://cn.string-db.org/): STRING focuses on protein information, especially the known and predicted protein-protein interactions information.
-6. [DisGeNET](https://www.disgenet.org/): DisGeNET is a versatile database of human disease-gene association.
-7. [SIDER](http://sideeffects.embl.de/): SIDER focuses on adverse reaction information of marketed medicines.
-8. [CTD](https://ctdbase.org/): Comparative Toxicogenomics Database (CTD) contains manually integrated information of chemical molecules, including interactions among molecules, genes diseases and phenotypes.
-9. [TTD](https://db.idrblab.net/ttd/): Therapeutic Target Database (TTD) collects information about drugs, targets (proteins and nucleic acids), diseases and pathways.
-10. [OMIM](https://www.omim.org/about): Online Mendelian Inheritance in Man (OMIM) mainly studies the relationship between human phenotypes and genes.
-11. [RepoDB](http://unmtid-shinyapps.net/shiny/repodb/): Repository of Promoting Data (RepoDB) collects drugs, diseases, and their relationships information.
-12. [BioGRID](https://thebiogrid.org/): BioGRID collects protein and genetic interaction information and chemical interaction networks.
-13. [HuRI](http://www.interactome-atlas.org/): The Human Reference Protein Interactome Mapping Project (HuRI) collects interaction networks of human proteins.
-14. [PharmGKB](https://www.pharmgkb.org/): PharmGKB mainly focuses on information about drug-gene associations and genotype-phenotype relationships.
-15. [STITCH](http://stitch.embl.de/): STITCH provides drug-target interaction data.
-16. [DrugCentral](https://drugcentral.org/): DrugCentral provides information about pharmaceutical products, active ingredients chemical entities, pharmacologic action, indications, mechanism of action.
-17. [PRISM](https://depmap.org/repurposing/): PRISM contains non-oncology drug response data to cancer cell lines.
-18. [CCLE](https://sites.broadinstitute.org/ccle): Cancer Cell Line Encyclopedia (CCLE) performs large-scale sequencing of human cancer cell lines, integrating information about DNA mutations, gene expression, and gene copy number.
-19. [GDSC](https://www.cancerrxgene.org/): Genomics of Drug Sensitivity in Cancer (GDSC) identifies drug sensitivity and molecular marker information of human cancer cell lines.
-20. [DrugCombDB](http://drugcombdb.denglab.org/main): DrugCombDB contains a drug combinations data for cancer cell lines.
-21. [DrugComb](https://drugcomb.org/): DrugComb is a monotherapy response and drug combinations database.
-22. [GEO](https://www.ncbi.nlm.nih.gov/geo/): Gene Expression Omnibus (GEO) contains gene expression profile data for various biological samples around the world.
+2. [ChEMBL](https://www.ebi.ac.uk/chembl/): ChEMBL contains chemical, biological activity and genomic data.
+3. [CKG](https://github.com/MannLabs/CKG): CKG constructed a biological network that contains approximately 20 million biological entities and 200 million relationships from 25 biomedical databases.
+4. [PrimeKG](https://github.com/mims-harvard/PrimeKG): PrimeKG derived a network with 10 types of biological entities and 30 types of relationships by fusing 20 high-quality resources. 
 
 ## S3 Multimodal Molecular Representation
 
