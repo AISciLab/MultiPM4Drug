@@ -1,10 +1,12 @@
 # Multimodal Self-Supervised Learning for Drug Discovery: A Survey and Taxonomy
 
+MultiPM4Drug presents a systematic Review that summarize the foundation of molecular modalities, and revisit the popular network frameworks, self-supervised tasks, training strategies and their application in drug discovery. To promote readers' understanding of multimodal pre-training models in drug discovery, MultiPM4Drug provides the relevant papers that investigated in this Review. 
+
+It is worth noting that this Review highlights the adaptability between various modalities and network frameworks or pre-training tasks. Simultaneously, we systematically compare the difference and relevance between various modalities or pre-training models. The previous works suggest two increasing trends that may be used as the reference points for the future researches. (1) Transformers and graph neural networks are often integrated together as encoders, and then cooperate with multiple pre-training tasks to learn cross-scale molecular representation, thus promoting the performance of drug discovery. (2) Molecule captions as brief biomedical text provide a bridge for collaboration of drug discovery with large language models. Finally, we discuss the challenges of multimodal pre-training models in drug discovery, and explore future opportunities.
+
 ![outline](./figures/image019.png)
 
 ## Table of Contents
-
-- [S1 Introduction](#s1-introduction)
 
 - [S2 Database](#s2-database)
 
@@ -16,7 +18,7 @@
   - [S4.3 Recurrent Neural Network (RNNs)](#s43-recurrent-neural-network-rnns)
   - [S4.4 Graph Neural Networks (GNNs)](#s44-graph-neural-networks-gnns)
   - [S4.5 Transformer](#s45-transformer)
-  
+
 - [S5 Pre-training Task](#s5-pre-training-task)
   - [S5.1 Contrastive Learning](#s51-contrastive-learning)
   - [S5.2 Multi-modal Matching Prediction](#s52-multi-modal-matching-prediction)
@@ -31,10 +33,6 @@
   - [S7.3 DDI Prediction](#s73-ddi-prediction)
   - [S7.4 DTI Prediction](#s74-dti-prediction)
   - [S7.5 Molecule Captioning](#s75-molecule-captioning)
-
-## S1 Introduction
-
-pass
 
 ## S2 Database
 
