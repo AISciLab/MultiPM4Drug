@@ -83,7 +83,7 @@ It is worth noting that this Review highlights the adaptability between various 
 4. **[Inception](https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html)**: Szegedy C, Liu W, Jia Y, et al. **Going deeper with convolutions**. Proceedings of the IEEE conference on computer vision and pattern recognition. 2015: 1-9.
 5. **[ResNet](https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html)**: He K, Zhang X, Ren S, et al. **Deep residual learning for image recognition**. Proceedings of the IEEE conference on computer vision and pattern recognition. 2016: 770-778.
 
-- **CNN-based drug discovery:** [DeepDTA](https://academic.oup.com/bioinformatics/article/34/17/i821/5093245), [MATT_DTI](https://academic.oup.com/bib/article/22/5/bbab117/6231754), [DEEPScreen](https://pubs.rsc.org/en/content/articlehtml/2020/sc/c9sc03414e), [AtomNet](https://arxiv.org/abs/1510.02855), [Toxic Colors](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.8b00338)
+- **CNN-based drug discovery:** [DeepDTA](https://academic.oup.com/bioinformatics/article/34/17/i821/5093245), [MATT_DTI](https://academic.oup.com/bib/article/22/5/bbab117/6231754), [DEEPScreen](https://pubs.rsc.org/en/content/articlehtml/2020/sc/c9sc03414e), [AtomNet](https://arxiv.org/abs/1510.02855), [Toxic Colors](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.8b00338), [ImageMol](https://www.nature.com/articles/s42256-022-00557-6)
 
 ### S4.3 Recurrent Neural Network (RNNs)
 
