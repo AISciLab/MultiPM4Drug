@@ -4,13 +4,13 @@ MultiPM4Drug presents a systematic Review that summarize the foundation of molec
 
 It is worth noting that this Review highlights the adaptability between various modalities and network frameworks or pre-training tasks. Simultaneously, we systematically compare the difference and relevance between various modalities or pre-training models. The previous works suggest two increasing trends that may be used as the reference points for the future researches. (1) Transformers and graph neural networks are often integrated together as encoders, and then cooperate with multiple pre-training tasks to learn cross-scale molecular representation, thus promoting the performance of drug discovery. (2) Molecule captions as brief biomedical text provide a bridge for collaboration of drug discovery with large language models. Finally, we discuss the challenges of multimodal pre-training models in drug discovery, and explore future opportunities.
 
-![outline](./figures/figure_2.png)
+![outline](./figures/fig-overview.svg)
 
 ## Table of Contents
 
 - [S2 Database](#s2-database)
 
-- [S3 Multimodal Molecular Representation](#s3-multimodal-molecular-representation)
+- [S3 Molecular Representation](#s3-molecular-representation)
 
 - [S4 Network Frameworks](#s4-network-frameworks)
   - [S4.1 Deep Neural Networks (DNNs)](#s41-deep-neural-networks-dnns)
@@ -41,9 +41,16 @@ It is worth noting that this Review highlights the adaptability between various 
 3. [CKG](https://github.com/MannLabs/CKG): CKG constructed a biological network that contains approximately 20 million biological entities and 200 million relationships from 25 biomedical databases.
 4. [PrimeKG](https://github.com/mims-harvard/PrimeKG): PrimeKG derived a network with 10 types of biological entities and 30 types of relationships by fusing 20 high-quality resources. 
 
-## S3 Multimodal Molecular Representation
+## S3 Molecular Representation
 
-pass
+- **1D molecular sequence**: each molecule is transformed into strings based on the bonding rules of chemical structures, such as [SMILES](https://pubs.acs.org/doi/pdf/10.1021/ci00057a005), [InChI](https://en.wikipedia.org/wiki/International_Chemical_Identifier), and [SMARTS](https://en.wikipedia.org/wiki/SMILES_arbitrary_target_specification).
+- **2D molecular graph**: it can reflect molecular topology where atoms and bonds are treated as nodes and edges, respectively.
+- **Molecular fingerprint**: it encodes 2D structure of molecules into binary vectors, such as [PubChem fingerprint](https://academic.oup.com/nar/article/47/D1/D1102/5146201), [MACCS fingerprint](https://pubs.acs.org/doi/full/10.1021/ci010132r), and [ECFP fingerprint](https://pubs.acs.org/doi/full/10.1021/ci100050t).
+- **3D molecular geometry**: its represents the arrangements of atoms in 3D space, providing the geometric position of each atom.
+- **Molecular descriptor**: it represents physical or chemical properties including molecular weight, atomic number, and atom type counts.
+- **Molecular interaction network**: it denotes the complex relationships between drug and biomedical entities, reflecting the biological processes in the human body.
+- **Molecule captions**: it refers to a brief text description that annotates key characteristics and properties.
+- **Common tools**: [RDKit](https://github.com/rdkit/rdkit), and [Open Babel](https://github.com/openbabel/openbabel).
 
 ## S4 Network Frameworks
 
