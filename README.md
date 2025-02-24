@@ -4,7 +4,7 @@ MultiPM4Drug presents a systematic Review that summarize the foundation of molec
 
 It is worth noting that this Review highlights the adaptability between various modalities and network frameworks or pre-training tasks. Simultaneously, we systematically compare the difference and relevance between various modalities or pre-training models. The previous works suggest two increasing trends that may be used as the reference points for the future researches. (1) Transformers and graph neural networks are often integrated together as encoders, and then cooperate with multiple pre-training tasks to learn cross-scale molecular representation, thus promoting the performance of drug discovery. (2) Molecule captions as brief biomedical text provide a bridge for collaboration of drug discovery with large language models. Finally, we discuss the challenges of multimodal pre-training models in drug discovery, and explore future opportunities.
 
-![outline](./figures/image019.png)
+![outline](./figures/figure_2.png)
 
 ## Table of Contents
 
