@@ -1,4 +1,4 @@
-# Multimodal Self-Supervised Learning for Drug Discovery: A Survey and Taxonomy
+# Multimodal Pre-training Models for Drug Discovery
 
 MultiPM4Drug presents a systematic Review that summarize the foundation of molecular modalities, and revisit the popular network frameworks, self-supervised tasks, training strategies and their application in drug discovery. To promote readers' understanding of multimodal pre-training models in drug discovery, MultiPM4Drug provides the relevant papers that investigated in this Review. 
 
