@@ -55,6 +55,7 @@ It is worth noting that this Review highlights the adaptability between various 
 17. [DrugCombDB](http://drugcombdb.denglab.org/main): DrugCombDB contains a drug combinations data for cancer cell lines.
 18. [DrugComb](https://drugcomb.org/): DrugComb is a monotherapy response and drug combinations database.
 19. [GEO](https://www.ncbi.nlm.nih.gov/geo/): Gene Expression Omnibus (GEO) contains gene expression profile data for various biological samples around the world.
+20. [CKG](https://ckg.readthedocs.io/en/latest): CKG(Clinical Knowledse Graph) comprises close to 20 million nodes and 220 million relationships.
 
 ## S3 Molecular Representation
 
@@ -107,13 +108,15 @@ It is worth noting that this Review highlights the adaptability between various 
 2. **[GAT](https://arxiv.org/abs/1710.10903)**: Veličković P, Cucurull G, Casanova A, et al. **Graph attention networks**. arXiv preprint arXiv:1710.10903, 2017. 
 3. **[GIN](https://arxiv.org/abs/1810.00826)**: Xu K, Hu W, Leskovec J, et al. **How powerful are graph neural networks?**. arXiv preprint arXiv:1810.00826, 2018.
 
-- **GNN-based drug discovery:** [D-MPNN](https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237), [Attentive FP](https://pubs.acs.org/doi/abs/10.1021/acs.jmedchem.9b00959), [AMPNN](https://link.springer.com/article/10.1186/s13321-019-0407-y), [GeoGNN](http://www.peng-lab.org/lab-chinese/Geometry-enhanced%20molecular%20representation.pdf), [GCPN](https://proceedings.neurips.cc/paper_files/paper/2018/hash/d60678e8f2ba9c540798ebbde31177e8-Abstract.html), [MolDQN](https://www.nature.com/articles/s41598-019-47148-x), [DeepGraphMolGen](https://link.springer.com/article/10.1186/s13321-020-00454-3), [MNCE-RL](https://proceedings.neurips.cc/paper_files/paper/2020/hash/5f268dfb0fbef44de0f668a022707b86-Abstract.html), [MSSL2drug](https://www.nature.com/articles/s42256-023-00640-6)
+- **GNN-based drug discovery:** [D-MPNN](https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237), [Attentive FP](https://pubs.acs.org/doi/abs/10.1021/acs.jmedchem.9b00959), [AMPNN](https://link.springer.com/article/10.1186/s13321-019-0407-y), [GeoGNN](http://www.peng-lab.org/lab-chinese/Geometry-enhanced%20molecular%20representation.pdf), [GCPN](https://proceedings.neurips.cc/paper_files/paper/2018/hash/d60678e8f2ba9c540798ebbde31177e8-Abstract.html), [MolDQN](https://www.nature.com/articles/s41598-019-47148-x), [DeepGraphMolGen](https://link.springer.com/article/10.1186/s13321-020-00454-3), [MNCE-RL](https://proceedings.neurips.cc/paper_files/paper/2020/hash/5f268dfb0fbef44de0f668a022707b86-Abstract.html), [MSSL2drug](https://www.nature.com/articles/s42256-023-00640-6), [enn-s2s](https://proceedings.mlr.press/v70/gilmer17a)
 
 ### S4.5 Transformer
 
 1. **[Vanilla Transformer](https://user.phil.hhu.de/~cwurm/wp-content/uploads/2020/01/7181-attention-is-all-you-need.pdf)**: Vaswani A. **Attention is all you need**. Advances in Neural Information Processing Systems, 2017. 
 2. **[Vision Transformer](https://arxiv.org/abs/2010.11929v2)**: Dosovitskiy A. **An image is worth 16x16 words: Transformers for image recognition at scale**. arXiv preprint arXiv:2010.11929, 2020. 
 3. **[Graph Transformer](https://proceedings.neurips.cc/paper/2021/hash/f1c1592588411002af340cbaedd6fc33-Abstract.html)**: Ying C, Cai T, Luo S, et al. **Do transformers really perform badly for graph representation?**. Advances in neural information processing systems, 2021, 34: 28877-28888. 
+
+- **GNN-based drug discovery:** 
 
 ## S5 Pre-training Task
 
@@ -149,6 +152,8 @@ It is worth noting that this Review highlights the adaptability between various 
 2. **[RoBERTa](https://arxiv.org/abs/1907.11692)**: Liu Y, Ott M, Goyal N, et al. **Roberta: A robustly optimized bert pretraining approach**. arXiv preprint arXiv:1907.11692, 2019.
 3. **[T5](http://www.jmlr.org/papers/v21/20-074.html)**: Raffel C, Shazeer N, Roberts A, et al. **Exploring the limits of transfer learning with a unified text-to-text transformer**. Journal of machine learning research, 2020, 21(140): 1-67.
 4. **[SpanBERT](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00300/43539/SpanBERT-Improving-Pre-training-by-Representing)**: Joshi M, Chen D, Liu Y, et al. **Spanbert: Improving pre-training by representing and predicting spans**. Transactions of the association for computational linguistics, 2020, 8: 64-77.
+5. **[BEiT](https://arxiv.org/abs/2106.08254)**: Bao H, Dong L, Piao S, et al. **Beit: Bert pre-training of image transformers**. arXiv preprint arXiv:2106.08254, 2021.
+6. **[MAE](https://openaccess.thecvf.com/content/CVPR2022/html/He_Masked_Autoencoders_Are_Scalable_Vision_Learners_CVPR_2022_paper.html)**: He K, Chen X, Xie S, et al. Masked autoencoders are scalable vision learners. Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2022: 16000-16009.
 
 - **Masked prediction methods for drug discovery:** [SMILES-BERT](https://dl.acm.org/doi/abs/10.1145/3307339.3342186), [ChemBERTa](https://arxiv.org/abs/2010.09885), [MOLBERT](https://onlinelibrary.wiley.com/doi/full/10.1155/2021/7181815), [Pre-GNN](https://arxiv.org/abs/1905.12265), [GROVER](https://proceedings.neurips.cc/paper/2020/hash/94aef38441efa3380a3bed3faf1f9d5d-Abstract.html), [deepR2cov](https://academic.oup.com/bib/article/22/6/bbab226/6296505), [BioERP](https://academic.oup.com/bioinformatics/article/37/24/4793/6332000), [MoLFORMER](https://www.nature.com/articles/s42256-022-00580-7)
 
@@ -181,7 +186,6 @@ It is worth noting that this Review highlights the adaptability between various 
 1. **[TamGen](https://www.nature.com/articles/s41467-024-53632-4)** Wu K, Xia Y, Deng P, et al. **TamGen: drug design with target-aware molecule generation through a chemical language model**. Nature Communications, 2024, 15(1): 9360. 
 2. **[Lingo3DMol](https://www.nature.com/articles/s42256-023-00775-6)** Feng W, Wang L, Lin Z, et al. **Generation of 3D molecules in pockets via a language model**. Nature Machine Intelligence, 2024, 6(1): 62-73. 
 3. **[3DSMILES-GPT](https://pubs.rsc.org/en/content/articlehtml/2024/sc/d4sc06864e)** Wang J, Luo H, Qin R, et al. **3DSMILES-GPT: 3D molecular pocket-based generation with token-only large language model**. Chemical Science, 2025, 16(2): 637-648. 
-4. **[MOLGEN](https://openreview.net/forum?id=9rPyHyjfwP)** Fang Y, Zhang N, Chen Z, et al. **Domain-Agnostic Molecular Generation with Chemical Feedback**. The Twelfth International Conference on Learning Representations. 2024. 
 5. **[MolT5](https://arxiv.org/abs/2204.11817)**: Edwards C, Lai T, Ros K, et al. **Translation between molecules and natural language**. arXiv preprint arXiv:2204.11817, 2022.
 6. **[Ada-T5](https://ojs.aaai.org/index.php/AAAI/article/view/30198)**: Chen Y, Xi N, Du Y, et al. **From Artificially Real to Real: Leveraging Pseudo Data from Large Language Models for Low-Resource Molecule Discovery**. Proceedings of the AAAI Conference on Artificial Intelligence. 2024, 38(20): 21958-21966.
 7. **[ChatMol](https://academic.oup.com/bioinformatics/article/40/9/btae534/7747661)**: Zeng Z, Yin B, Wang S, et al. **ChatMol: interactive molecular discovery with natural language**. Bioinformatics, 2024, 40(9): btae534.
@@ -215,7 +219,6 @@ It is worth noting that this Review highlights the adaptability between various 
 3. **[TIGER](https://ojs.aaai.org/index.php/AAAI/article/view/27777)**: Su X, Hu P, You Z H, et al. **Dual-Channel Learning Framework for Drug-Drug Interaction Prediction via Relation-Aware Heterogeneous Graph Transformer**. Proceedings of the AAAI Conference on Artificial Intelligence. 2024, 38(1): 249-256. 
 4. **[HS-GPF](https://link.springer.com/chapter/10.1007/978-3-031-70371-3_3)**: Ye Y, Zhou J, Li S, et al. **Hierarchical Structure-Aware Graph Prompting for Drug-Drug Interaction Prediction**. Joint European Conference on Machine Learning and Knowledge Discovery in Databases. Cham: Springer Nature Switzerland, 2024: 36-54. 
 5. **[H2D](https://dl.acm.org/doi/abs/10.1145/3627673.3679936)**: Zhang R, Wang X, Wang S, et al. **H2D: Hierarchical Heterogeneous Graph Learning Framework for Drug-Drug Interaction Prediction**. Proceedings of the 33rd ACM International Conference on Information and Knowledge Management. 2024: 4283-4287. 
-6. **[ReLMole](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.2c00798)**: Ji Z, Shi R, Lu J, et al. **ReLMole: Molecular representation learning based on two-level graph similarities**. Journal of Chemical Information and Modeling, 2022, 62(22): 5361-5372. 
 7. **[HetDDI](https://academic.oup.com/bib/article/24/6/bbad385/7333670)**: Li Z, Tu X, Chen Y, et al. **HetDDI: a pre-trained heterogeneous graph neural network model for drug–drug interaction prediction**. Briefings in Bioinformatics, 2023, 24(6): bbad385. 
 
 ### S7.4 DTI Prediction
@@ -224,6 +227,7 @@ It is worth noting that this Review highlights the adaptability between various 
 2. **[DrugLAMP](https://academic.oup.com/bioinformatics/article/40/12/btae693/7906489)**: Luo Z, Wu W, Sun Q, et al. **Accurate and transferable drug–target interaction prediction with DrugLAMP**. Bioinformatics, 2024, 40(12): btae693. 
 3. **[C2P2](https://academic.oup.com/bib/article/23/4/bbac269/6628784)**: Nguyen T M, Nguyen T, Tran T. **Mitigating cold-start problems in drug-target affinity prediction with interaction knowledge transferring**. Briefings in Bioinformatics, 2022, 23(4): bbac269. 
 4. **[BioT5](https://arxiv.org/abs/2310.07276)**: Pei Q, Zhang W, Zhu J, et al. **Biot5: Enriching cross-modal integration in biology with chemical knowledge and natural language associations**. arXiv preprint arXiv:2310.07276, 2023.
+5. **[MSSL2drug](https://www.nature.com/articles/s42256-023-00640-6)**: Wang X, Cheng Y, Yang Y, et al. **Multitask joint strategies of self-supervised representation learning on biomedical networks for drug discovery**. Nature Machine Intelligence, 2023, 5(4): 445-456.
 
 ### S7.5 Molecule Captioning
 
@@ -231,3 +235,4 @@ It is worth noting that this Review highlights the adaptability between various 
 2. **[3D-MOLM](https://arxiv.org/abs/2401.13923)**: Li S, Liu Z, Luo Y, et al. **Towards 3d molecule-text interpretation in language models**. arXiv preprint arXiv:2401.13923, 2024.
 3. **[MolFM](https://arxiv.org/abs/2307.09484)**: Luo Y, Yang K, Hong M, et al. **Molfm: A multimodal molecular foundation model**. arXiv preprint arXiv:2307.09484, 2023.
 4. **[UniMoT](https://arxiv.org/abs/2408.00863)**: Zhang J, Bian Y, Chen Y, et al. **Unimot: Unified molecule-text language model with discrete token representation**. arXiv preprint arXiv:2408.00863, 2024.
+5. **[MolReGPT](https://ieeexplore.ieee.org/abstract/document/10516270)**: Li J, Liu Y, Fan W, et al. **Empowering molecule discovery for molecule-caption translation with large language models: A chatgpt perspective**. IEEE transactions on knowledge and data engineering, 2024.
