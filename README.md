@@ -8,7 +8,7 @@ It is worth noting that this Review highlights the adaptability between various 
 
 ## Table of Contents
 
-- [S2 Database](#s2-database)
+- [S2 Databases](#s2-database)
 
 - [S3 Molecular Representation](#s3-molecular-representation)
 
@@ -19,13 +19,13 @@ It is worth noting that this Review highlights the adaptability between various 
   - [S4.4 Graph Neural Networks (GNNs)](#s44-graph-neural-networks-gnns)
   - [S4.5 Transformer](#s45-transformer)
 
-- [S5 Pre-training Task](#s5-pre-training-task)
+- [S5 Pre-training Tasks](#s5-pre-training-task)
   - [S5.1 Contrastive Learning](#s51-contrastive-learning)
   - [S5.2 Multi-modal Matching Prediction](#s52-multi-modal-matching-prediction)
   - [S5.3 Masked Prediction](#s53-masked-prediction)
   - [S5.4 Autoregressive Modeling](#s54-autoregressive-modeling)
 
-- [S6 Self-supervised Training Strategy](#s6-self-supervised-training-strategy)
+- [S6 Self-supervised Training Strategies](#s6-self-supervised-training-strategy)
 
 - [S7 Drug Discovery Applications](#s7-drug-discovery-applications)
   - [S7.1 Molecular Generation](#s71-molecular-generation)
