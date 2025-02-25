@@ -116,7 +116,7 @@ It is worth noting that this Review highlights the adaptability between various 
 2. **[Vision Transformer](https://arxiv.org/abs/2010.11929v2)**: Dosovitskiy A. **An image is worth 16x16 words: Transformers for image recognition at scale**. arXiv preprint arXiv:2010.11929, 2020. 
 3. **[Graph Transformer](https://proceedings.neurips.cc/paper/2021/hash/f1c1592588411002af340cbaedd6fc33-Abstract.html)**: Ying C, Cai T, Luo S, et al. **Do transformers really perform badly for graph representation?**. Advances in neural information processing systems, 2021, 34: 28877-28888. 
 
-- **GNN-based drug discovery:** 
+- **Transformer-based drug discovery:** [TransformerCPI2.0](https://www.nature.com/articles/s41467-023-39856-w), [MAT](https://arxiv.org/abs/2002.08264), [Transformer-M](https://arxiv.org/abs/2210.01765), [Interformer](https://www.nature.com/articles/s41467-024-54440-6)
 
 ## S5 Pre-training Task
 
