@@ -10,7 +10,6 @@ It is worth noting that this Review highlights the adaptability between various 
 
 - [S1 Multimodal Molecular Data](#s1-multimodal-molecular-data)
   - [S1.1 Databases](#s11-databases)
-
   - [S1.2 Molecular Representation](#s12-molecular-representation)
 
 - [S2 Network Frameworks](#s2-network-frameworks)
@@ -19,6 +18,7 @@ It is worth noting that this Review highlights the adaptability between various 
   - [S2.3 Recurrent Neural Network (RNNs)](#s23-recurrent-neural-network-rnns)
   - [S2.4 Graph Neural Networks (GNNs)](#s24-graph-neural-networks-gnns)
   - [S2.5 Transformer](#s25-transformer)
+
 - [S3 Pre-training Tasks](#s3-pre-training-task)
   - [S3.1 Contrastive Learning](#s31-contrastive-learning)
   - [S3.2 Multi-modal Matching Prediction](#s32-multi-modal-matching-prediction)
