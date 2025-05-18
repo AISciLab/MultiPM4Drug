@@ -8,33 +8,35 @@ It is worth noting that this Review highlights the adaptability between various 
 
 ## Table of Contents
 
-- [S2 Databases](#s2-database)
+- [S1 Multimodal Molecular Data](#s1-multimodal-molecular-data)
+  - [S1.1 Databases](#s11-databases)
 
-- [S3 Molecular Representation](#s3-molecular-representation)
+  - [S1.2 Molecular Representation](#s12-molecular-representation)
 
-- [S4 Network Frameworks](#s4-network-frameworks)
-  - [S4.1 Deep Neural Networks (DNNs)](#s41-deep-neural-networks-dnns)
-  - [S4.2 Convolutional Neural Networks (CNNs)](#s42-convolutional-neural-networks-cnns)
-  - [S4.3 Recurrent Neural Network (RNNs)](#s43-recurrent-neural-network-rnns)
-  - [S4.4 Graph Neural Networks (GNNs)](#s44-graph-neural-networks-gnns)
-  - [S4.5 Transformer](#s45-transformer)
+- [S2 Network Frameworks](#s2-network-frameworks)
+  - [S2.1 Deep Neural Networks (DNNs)](#s21-deep-neural-networks-dnns)
+  - [S2.2 Convolutional Neural Networks (CNNs)](#s22-convolutional-neural-networks-cnns)
+  - [S2.3 Recurrent Neural Network (RNNs)](#s23-recurrent-neural-network-rnns)
+  - [S2.4 Graph Neural Networks (GNNs)](#s24-graph-neural-networks-gnns)
+  - [S2.5 Transformer](#s25-transformer)
+- [S3 Pre-training Tasks](#s3-pre-training-task)
+  - [S3.1 Contrastive Learning](#s31-contrastive-learning)
+  - [S3.2 Multi-modal Matching Prediction](#s32-multi-modal-matching-prediction)
+  - [S3.3 Masked Prediction](#s33-masked-prediction)
+  - [S3.4 Autoregressive Modeling](#s34-autoregressive-modeling)
 
-- [S5 Pre-training Tasks](#s5-pre-training-task)
-  - [S5.1 Contrastive Learning](#s51-contrastive-learning)
-  - [S5.2 Multi-modal Matching Prediction](#s52-multi-modal-matching-prediction)
-  - [S5.3 Masked Prediction](#s53-masked-prediction)
-  - [S5.4 Autoregressive Modeling](#s54-autoregressive-modeling)
+- [S4 Self-supervised Training Strategies](#s4-self-supervised-training-strategy)
 
-- [S6 Self-supervised Training Strategies](#s6-self-supervised-training-strategy)
+- [S5 Drug Discovery in the Context of Multimodal Pre-training](#s5-drug-discovery-in-the-context-of-multimodal-pre-training)
+  - [S5.1 Molecular Generation](#s51-molecular-generation)
+  - [S5.2 Molecular Property Prediction](#s52-molecular-property-prediction)
+  - [S5.3 DDI Prediction](#s53-ddi-prediction)
+  - [S5.4 DTI Prediction](#s54-dti-prediction)
+  - [S5.5 Molecule Captioning](#s55-molecule-captioning)
 
-- [S7 Drug Discovery Applications](#s7-drug-discovery-applications)
-  - [S7.1 Molecular Generation](#s71-molecular-generation)
-  - [S7.2 Molecular Property Prediction](#s72-molecular-property-prediction)
-  - [S7.3 DDI Prediction](#s73-ddi-prediction)
-  - [S7.4 DTI Prediction](#s74-dti-prediction)
-  - [S7.5 Molecule Captioning](#s75-molecule-captioning)
+## S1 Multimodal Molecular Data
 
-## S2 Database
+### S1.1 Databases
 
 1. [DrugBank](http://www.drugbank.ca/): DrugBank is comprehensive database containing information on drugs and targets.
 2. [PubChem](https://pubchem.ncbi.nlm.nih.gov/): PubChem provides detailed drug molecule information, including chemical structure and properties, biological activity, toxicity, and more.
@@ -57,7 +59,7 @@ It is worth noting that this Review highlights the adaptability between various 
 19. [GEO](https://www.ncbi.nlm.nih.gov/geo/): Gene Expression Omnibus (GEO) contains gene expression profile data for various biological samples around the world.
 20. [CKG](https://ckg.readthedocs.io/en/latest): CKG(Clinical Knowledse Graph) comprises close to 20 million nodes and 220 million relationships.
 
-## S3 Molecular Representation
+### S1.2 Molecular Representation
 
 - **1D molecular sequence**: each molecule is transformed into strings based on the bonding rules of chemical structures, such as [SMILES](https://pubs.acs.org/doi/pdf/10.1021/ci00057a005), [InChI](https://en.wikipedia.org/wiki/International_Chemical_Identifier), and [SMARTS](https://en.wikipedia.org/wiki/SMILES_arbitrary_target_specification).
 - **2D molecular graph**: it can reflect molecular topology where atoms and bonds are treated as nodes and edges, respectively.
@@ -68,15 +70,15 @@ It is worth noting that this Review highlights the adaptability between various 
 - **Molecule captions**: it refers to a brief text description that annotates key characteristics and properties.
 - **Common tools**: [RDKit](https://github.com/rdkit/rdkit), and [Open Babel](https://github.com/openbabel/openbabel).
 
-## S4 Network Frameworks
+## S2 Network Frameworks
 
-### S4.1 Deep Neural Networks (DNNs)
+### S2.1 Deep Neural Networks (DNNs)
 
 1. **[DNN](https://www.nature.com/articles/nature14539)**: LeCun Y, Bengio Y, Hinton G. **Deep learning**. nature, 2015, 521(7553): 436-444.
 
 - **DNN-based drug discovery:** [DeepDDI](https://www.pnas.org/doi/abs/10.1073/pnas.1803294115), [DeepSynergy](https://academic.oup.com/bioinformatics/article/34/9/1538/4747884) 
 
-### S4.2 Convolutional Neural Networks (CNNs)
+### S2.2 Convolutional Neural Networks (CNNs)
 
 1. **[VGG](https://ieeexplore.ieee.org/abstract/document/7005506)**: He K, Zhang X, Ren S, et al. **Spatial pyramid pooling in deep convolutional networks for visual recognition**. IEEE transactions on pattern analysis and machine intelligence, 2015, 37(9): 1904-1916.
 2. **[AlexNet](https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html)**: Krizhevsky A, Sutskever I, Hinton G E. **Imagenet classification with deep convolutional neural networks**. Advances in neural information processing systems, 2012, 25.
@@ -86,7 +88,7 @@ It is worth noting that this Review highlights the adaptability between various 
 
 - **CNN-based drug discovery:** [DeepDTA](https://academic.oup.com/bioinformatics/article/34/17/i821/5093245), [MATT_DTI](https://academic.oup.com/bib/article/22/5/bbab117/6231754), [DEEPScreen](https://pubs.rsc.org/en/content/articlehtml/2020/sc/c9sc03414e), [AtomNet](https://arxiv.org/abs/1510.02855), [Toxic Colors](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.8b00338), [ImageMol](https://www.nature.com/articles/s42256-022-00557-6)
 
-### S4.3 Recurrent Neural Network (RNNs)
+### S2.3 Recurrent Neural Network (RNNs)
 
 1. **[LSTM](https://ieeexplore.ieee.org/abstract/document/6795963)**: Hochreiter S. **Long Short-term Memory**. Neural Computation MIT-Press, 1997.
 2. **[GRU](https://arxiv.org/abs/1412.3555)**: Chung J, Gulcehre C, Cho K H, et al. **Empirical evaluation of gated recurrent neural networks on sequence modeling**. arXiv preprint arXiv:1412.3555, 2014.
@@ -94,7 +96,7 @@ It is worth noting that this Review highlights the adaptability between various 
 
 - **RNN-based drug discovery:** [REINVENT](https://link.springer.com/article/10.1186/s13321-017-0235-x), [MOSES](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2020.565644/full), [ChemTS](https://www.tandfonline.com/doi/full/10.1080/14686996.2017.1401424), [JANUS](https://pubs.acs.org/doi/full/10.1021/acscentsci.7b00572)
 
-### S4.4 Graph Neural Networks (GNNs)
+### S2.4 Graph Neural Networks (GNNs)
 
 #### Spectral-based Graph Neural Networks
 
@@ -111,7 +113,7 @@ It is worth noting that this Review highlights the adaptability between various 
 
 - **GNN-based drug discovery:** [D-MPNN](https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b00237), [Attentive FP](https://pubs.acs.org/doi/abs/10.1021/acs.jmedchem.9b00959), [AMPNN](https://link.springer.com/article/10.1186/s13321-019-0407-y), [GeoGNN](http://www.peng-lab.org/lab-chinese/Geometry-enhanced%20molecular%20representation.pdf), [GCPN](https://proceedings.neurips.cc/paper_files/paper/2018/hash/d60678e8f2ba9c540798ebbde31177e8-Abstract.html), [MolDQN](https://www.nature.com/articles/s41598-019-47148-x), [DeepGraphMolGen](https://link.springer.com/article/10.1186/s13321-020-00454-3), [MNCE-RL](https://proceedings.neurips.cc/paper_files/paper/2020/hash/5f268dfb0fbef44de0f668a022707b86-Abstract.html), [MSSL2drug](https://www.nature.com/articles/s42256-023-00640-6), [enn-s2s](https://proceedings.mlr.press/v70/gilmer17a)
 
-### S4.5 Transformer
+### S2.5 Transformer
 
 1. **[Vanilla Transformer](https://user.phil.hhu.de/~cwurm/wp-content/uploads/2020/01/7181-attention-is-all-you-need.pdf)**: Vaswani A. **Attention is all you need**. Advances in Neural Information Processing Systems, 2017. 
 2. **[Vision Transformer](https://arxiv.org/abs/2010.11929v2)**: Dosovitskiy A. **An image is worth 16x16 words: Transformers for image recognition at scale**. 9th International Conference on Learning Representations, ICLR 2021, Virtual Event, Austria, May 3-7, 2021. 
@@ -119,9 +121,9 @@ It is worth noting that this Review highlights the adaptability between various 
 
 - **Transformer-based drug discovery:** [TransformerCPI2.0](https://www.nature.com/articles/s41467-023-39856-w), [MAT](https://arxiv.org/abs/2002.08264), [Transformer-M](https://arxiv.org/abs/2210.01765), [Interformer](https://www.nature.com/articles/s41467-024-54440-6)
 
-## S5 Pre-training Task
+## S3 Pre-training Task
 
-### S5.1 Contrastive Learning
+### S3.1 Contrastive Learning
 
 #### Perturbation Contrast
 
@@ -139,7 +141,7 @@ It is worth noting that this Review highlights the adaptability between various 
 
 - **Perturbation contrast methods for drug discovery:** [SMICLR](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.2c00521), [3D Infomax](https://proceedings.mlr.press/v162/stark22a.html), [GeomGCL](https://ojs.aaai.org/index.php/AAAI/article/view/20377), [MOCO](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.3c01468), [Text2Mol](https://aclanthology.org/2021.emnlp-main.47/), [MoleculeSTM](https://www.nature.com/articles/s42256-023-00759-6), [MoMu](https://arxiv.org/abs/2209.05481)
 
-### S5.2 Multi-modal Matching Prediction
+### S3.2 Multi-modal Matching Prediction
 
 1. **[ViLT](https://proceedings.mlr.press/v139/kim21k.html)**: Kim W, Son B, Kim I. **Vilt: Vision-and-language transformer without convolution or region supervision**. International conference on machine learning. PMLR, 2021: 5583-5594. 
 2. **[UNITER](https://link.springer.com/chapter/10.1007/978-3-030-58577-8_7)**: Chen Y C, Li L, Yu L, et al. **Uniter: Universal image-text representation learning**. European conference on computer vision. Cham: Springer International Publishing, 2020: 104-120.
@@ -147,7 +149,7 @@ It is worth noting that this Review highlights the adaptability between various 
 
 - **Multi-modal matching prediction methods for drug discovery:** [ISMol](https://ieeexplore.ieee.org/abstract/document/10375706), [MolCA](https://arxiv.org/abs/2310.12798)
 
-### S5.3 Masked Prediction
+### S3.3 Masked Prediction
 
 1. **[BERT](https://eva.fing.edu.uy/pluginfile.php/524749/mod_folder/content/0/BERT%20Pre-training%20of%20Deep%20Bidirectional%20Transformers%20for%20Language%20Understanding.pdf)** Devlin J. **Bert: Pre-training of deep bidirectional transformers for language understanding**. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, NAACL-HLT 2019, Minneapolis, MN, USA, June 2-7, 2019, Volume 1 (Long and Short Papers). Association for Computational Linguistics, 2019: 4171-4186.
 2. **[RoBERTa](https://arxiv.org/abs/1907.11692)**: Liu Y, Ott M, Goyal N, et al. **Roberta: A robustly optimized bert pretraining approach**. arXiv preprint arXiv:1907.11692, 2019.
@@ -158,7 +160,7 @@ It is worth noting that this Review highlights the adaptability between various 
 
 - **Masked prediction methods for drug discovery:** [SMILES-BERT](https://dl.acm.org/doi/abs/10.1145/3307339.3342186), [ChemBERTa](https://arxiv.org/abs/2010.09885), [MOLBERT](https://onlinelibrary.wiley.com/doi/full/10.1155/2021/7181815), [Pre-GNN](https://arxiv.org/abs/1905.12265), [GROVER](https://proceedings.neurips.cc/paper/2020/hash/94aef38441efa3380a3bed3faf1f9d5d-Abstract.html), [deepR2cov](https://academic.oup.com/bib/article/22/6/bbab226/6296505), [BioERP](https://academic.oup.com/bioinformatics/article/37/24/4793/6332000), [MoLFORMER](https://www.nature.com/articles/s42256-022-00580-7)
 
-### S5.4 Autoregressive Modeling
+### S3.4 Autoregressive Modeling
 
 1. **[GPT](https://hayate-lab.com/wp-content/uploads/2023/05/43372bfa750340059ad87ac8e538c53b.pdf)**: Radford A. **Improving language understanding by generative pre-training**. 2018. 
 2. **[PaLM](https://www.jmlr.org/papers/v24/22-1144.html)**: Chowdhery A, Narang S, Devlin J, et al. **Palm: Scaling language modeling with pathways**. Journal of Machine Learning Research, 2023, 24(240): 1-113. 
@@ -166,7 +168,7 @@ It is worth noting that this Review highlights the adaptability between various 
 
 - **Autoregressive modeling methods for drug discovery:** [MolGPT](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.1c00600), [MolXPT](https://arxiv.org/abs/2305.10688), [MGSSL](https://proceedings.neurips.cc/paper/2021/hash/85267d349a5e647ff0a9edcb5ffd1e02-Abstract.html), [PrefixMol](https://arxiv.org/abs/2302.07120)
 
-## S6 Self-supervised Training Strategy
+## S4 Self-supervised Training Strategy
 
 1. **[Adapter](http://proceedings.mlr.press/v97/houlsby19a.html)**: Houlsby N, Giurgiu A, Jastrzebski S, et al. **Parameter-efficient transfer learning for NLP. International conference on machine learning**. PMLR, 2019: 2790-2799. 
 2. **[Soft Prompt](https://arxiv.org/abs/2101.00190)**: Li X L, Liang P. **Prefix-tuning: Optimizing continuous prompts for generation**. Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing, ACL/IJCNLP 2021, (Volume 1: Long Papers), Virtual Event, August 1-6, 2021. Association for Computational Linguistics, 2021: 4582-4597. 
@@ -181,9 +183,9 @@ It is worth noting that this Review highlights the adaptability between various 
 
 - **Different training strategies for drug discovery:** [MRCGNN](https://ojs.aaai.org/index.php/AAAI/article/view/25665), [TIGER](https://ojs.aaai.org/index.php/AAAI/article/view/27777), [MGIB](https://ieeexplore.ieee.org/abstract/document/10584266), [MIRACLE](https://dl.acm.org/doi/abs/10.1145/3442381.3449786)
 
-## S7 Drug Discovery Applications
+## S5 Drug Discovery in the Context of Multimodal Pre-training
 
-### S7.1 Molecular Generation
+### S5.1 Molecular Generation
 
 1. **[TamGen](https://www.nature.com/articles/s41467-024-53632-4)** Wu K, Xia Y, Deng P, et al. **TamGen: drug design with target-aware molecule generation through a chemical language model**. Nature Communications, 2024, 15(1): 9360. 
 2. **[Lingo3DMol](https://www.nature.com/articles/s42256-023-00775-6)** Feng W, Wang L, Lin Z, et al. **Generation of 3D molecules in pockets via a language model**. Nature Machine Intelligence, 2024, 6(1): 62-73. 
@@ -196,7 +198,7 @@ It is worth noting that this Review highlights the adaptability between various 
 9. **[3D-MolT5](https://arxiv.org/abs/2406.05797)**: Pei Q, Wu L, Gao K, et al. **3D-MolT5: Towards Unified 3D Molecule-Text Modeling with 3D Molecular Tokenization**. arXiv preprint arXiv:2406.05797, 2024.
 10. **[GIT-Mol](https://www.sciencedirect.com/science/article/pii/S0010482524001574)**: Liu P, Ren Y, Tao J, et al. **Git-mol: A multi-modal large language model for molecular science with graph, image, and text**. Computers in biology and medicine, 2024, 171: 108073.
 
-### S7.2 Molecular Property Prediction
+### S5.2 Molecular Property Prediction
 
 1. **[MM-Deacon](https://arxiv.org/abs/2109.08830)**: Guo Z, Sharma P, Martinez A, et al. **Multilingual molecular representation learning via contrastive pre-training**. Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), ACL 2022, Dublin, Ireland, May 22-27, 2022. Association for Computational Linguistics, 2022: 3441-3453. 
 2. **[DVMP](https://dl.acm.org/doi/abs/10.1145/3580305.3599317)**: Zhu J, Xia Y, Wu L, et al. **Dual-view molecular pre-training**. Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 2023: 3615-3627. 
@@ -214,7 +216,7 @@ It is worth noting that this Review highlights the adaptability between various 
 14. **[MoleculeSTM](https://www.nature.com/articles/s42256-023-00759-6)**: Liu S, Nie W, Wang C, et al. **Multi-modal molecule structure–text model for text-based retrieval and editing**. Nature Machine Intelligence, 2023, 5(12): 1447-1457.
 15. **[MoMu](https://arxiv.org/abs/2209.05481)**: Su B, Du D, Yang Z, et al. **A molecular multimodal foundation model associating molecule graphs with natural language**. arXiv preprint arXiv:2209.05481, 2022.
 
-### S7.3 DDI Prediction
+### S5.3 DDI Prediction
 
 1. **[MIRACLE](https://dl.acm.org/doi/abs/10.1145/3442381.3449786)**: Wang Y, Min Y, Chen X, et al. **Multi-view graph contrastive representation learning for drug-drug interaction prediction**. Proceedings of the web conference 2021. 2021: 2921-2933. 
 2. **[MRCGNN](https://ojs.aaai.org/index.php/AAAI/article/view/25665)**: Xiong Z, Liu S, Huang F, et al. **Multi-relational contrastive learning graph neural network for drug-drug interaction event prediction**. Proceedings of the AAAI Conference on Artificial Intelligence. 2023, 37(4): 5339-5347. 
@@ -223,7 +225,7 @@ It is worth noting that this Review highlights the adaptability between various 
 5. **[H2D](https://dl.acm.org/doi/abs/10.1145/3627673.3679936)**: Zhang R, Wang X, Wang S, et al. **H2D: Hierarchical Heterogeneous Graph Learning Framework for Drug-Drug Interaction Prediction**. Proceedings of the 33rd ACM International Conference on Information and Knowledge Management. 2024: 4283-4287. 
 7. **[HetDDI](https://academic.oup.com/bib/article/24/6/bbad385/7333670)**: Li Z, Tu X, Chen Y, et al. **HetDDI: a pre-trained heterogeneous graph neural network model for drug–drug interaction prediction**. Briefings in Bioinformatics, 2023, 24(6): bbad385. 
 
-### S7.4 DTI Prediction
+### S5.4 DTI Prediction
 
 1. **[CSCo-DTA](https://academic.oup.com/bib/article/25/1/bbad516/7529149)**: Wang J, Xiao Y, Shang X, et al. **Predicting drug–target binding affinity with cross-scale graph contrastive learning**. Briefings in Bioinformatics, 2024, 25(1): bbad516. 
 2. **[DrugLAMP](https://academic.oup.com/bioinformatics/article/40/12/btae693/7906489)**: Luo Z, Wu W, Sun Q, et al. **Accurate and transferable drug–target interaction prediction with DrugLAMP**. Bioinformatics, 2024, 40(12): btae693. 
@@ -231,7 +233,7 @@ It is worth noting that this Review highlights the adaptability between various 
 4. **[BioT5](https://arxiv.org/abs/2310.07276)**: Pei Q, Zhang W, Zhu J, et al. **Biot5: Enriching cross-modal integration in biology with chemical knowledge and natural language associations**. Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing, EMNLP 2023, Singapore, December 6-10, 2023. Association for Computational Linguistics, 2023: 1102-1123. 
 5. **[MSSL2drug](https://www.nature.com/articles/s42256-023-00640-6)**: Wang X, Cheng Y, Yang Y, et al. **Multitask joint strategies of self-supervised representation learning on biomedical networks for drug discovery**. Nature Machine Intelligence, 2023, 5(4): 445-456.
 
-### S7.5 Molecule Captioning
+### S5.5 Molecule Captioning
 
 1. **[MolCA](https://arxiv.org/abs/2310.12798)**: Liu Z, Li S, Luo Y, et al. **MolCA: Molecular graph-language modeling with cross-modal projector and uni-modal adapter**. Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing, EMNLP 2023, Singapore, December 6-10, 2023. Association for Computational Linguistics, 2023: 15623-15638. 
 2. **[3D-MOLM](https://arxiv.org/abs/2401.13923)**: Li S, Liu Z, Luo Y, et al. **Towards 3d molecule-text interpretation in language models**. The Twelfth International Conference on Learning Representations, ICLR 2024, Vienna, Austria, May 7-11, 2024. 
