@@ -1,4 +1,4 @@
-# Multimodal Pre-training Models for Drug Discovery
+# Multimodal Pre-training Models of Molecular Representation for Drug Discovery
 
 MultiPM4Drug presents a systematic Review that summarize the foundation of molecular modalities, and revisit the popular network frameworks, self-supervised tasks, training strategies and their application in drug discovery. To promote readers' understanding of multimodal pre-training models in drug discovery, MultiPM4Drug provides the relevant papers that investigated in this Review. 
 
@@ -240,3 +240,24 @@ It is worth noting that this Review highlights the adaptability between various 
 3. **[MolFM](https://arxiv.org/abs/2307.09484)**: Luo Y, Yang K, Hong M, et al. **Molfm: A multimodal molecular foundation model**. arXiv preprint arXiv:2307.09484, 2023.
 4. **[UniMoT](https://arxiv.org/abs/2408.00863)**: Zhang J, Bian Y, Chen Y, et al. **Unimot: Unified molecule-text language model with discrete token representation**. arXiv preprint arXiv:2408.00863, 2024.
 5. **[MolReGPT](https://ieeexplore.ieee.org/abstract/document/10516270)**: Li J, Liu Y, Fan W, et al. **Empowering molecule discovery for molecule-caption translation with large language models: A chatgpt perspective**. IEEE transactions on knowledge and data engineering, 2024.
+
+
+
+## Citation
+
+```
+@article{wang2025multimodal,
+  title={Multimodal Pre-training Models of Molecular Representation for Drug Discovery},
+  author={Wang, Xiaoqi and Wang, Chuanshi and Ji, Boya and Wang, Junwen and Zheng, Mingyue and Song, Lingyun and Peng, Shaoliang and Shang, Xuequn},
+  journal={National Science Review},
+  doi={https://doi.org/10.1093/nsr/nwaf495},
+  pages={nwaf495},
+  year={2025}
+}
+```
+
+
+
+## Contacts
+
+If you have any questions or comments, please feel free to email: xqw@nwpu.edu.cn
